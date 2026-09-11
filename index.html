@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitation</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cinzel:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <p class="hint" id="hint">Click the flower to open</p>
+
+      <div class="scene" id="scene">
+        <article class="letter" id="letter" aria-hidden="true">
+          <img
+            class="letter-bg"
+            src="backgroundFlower.jfif"
+            alt=""
+            draggable="false"
+          />
+          <div class="float-flowers" aria-hidden="true">
+            <img class="float-flower f2" src="flower.png" alt="" />
+            <img class="float-flower f3" src="flower.png" alt="" />
+            <img class="float-flower f4" src="flower.png" alt="" />
+            <img class="float-flower f6" src="flower.png" alt="" />
+          </div>
+          <div class="invite-copy" dir="rtl" lang="ar">
+            <div class="invite-header">
+              <p class="invite-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+              <p class="invite-verse">
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+                لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+              </p>
+            </div>
+            <div class="invite-names">
+              <p class="invite-name">زهراء</p>
+              <p class="invite-and">و</p>
+              <p class="invite-name">محمد</p>
+            </div>
+            <div class="invite-details">
+              <p class="invite-date">الجمعة ١٥ أكتوبر ٢٠٢٦</p>
+              <p class="invite-time-label">الساعة السابعة مساءً</p>
+              <p class="invite-time">٧:٠٠</p>
+              <p class="invite-place">
+                <svg
+                  class="place-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"
+                  />
+                </svg>
+                <span>القلعة</span>
+              </p>
+            </div>
+          </div>
+          <button type="button" class="close-invite" id="closeInvite">
+            Close
+          </button>
+        </article>
+
+        <div class="envelope" id="envelope">
+          <div class="lining" aria-hidden="true"></div>
+
+          <div class="flap flap-bottom" aria-hidden="true">
+            <span class="face front"></span>
+            <span class="face back"></span>
+          </div>
+          <div class="flap flap-left" aria-hidden="true">
+            <span class="face front"></span>
+            <span class="face back"></span>
+          </div>
+          <div class="flap flap-top" aria-hidden="true">
+            <span class="face front"></span>
+            <span class="face back"></span>
+          </div>
+          <div class="flap flap-right" aria-hidden="true">
+            <span class="face front"></span>
+            <span class="face back"></span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="flower"
+          id="flowerBtn"
+          aria-label="Open the envelope"
+        >
+          <img src="flower.png" alt="" draggable="false" />
+        </button>
+      </div>
+    </main>
+
+    <script src="invitation.js"></script>
+  </body>
+</html>
