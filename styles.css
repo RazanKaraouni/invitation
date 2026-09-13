@@ -197,10 +197,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2.6em;
-  padding: max(56px, calc(env(safe-area-inset-top) + 40px)) 12% max(48px, env(safe-area-inset-bottom));
+  padding: max(32px, calc(env(safe-area-inset-top) + 18px)) 12% max(48px, env(safe-area-inset-bottom));
   text-align: center;
   font-family: "Aref Ruqaa", serif;
-  color: #000000;
+  color: #6b4423;
   text-shadow: none;
   opacity: 0;
   pointer-events: none;
@@ -249,6 +249,13 @@ body {
   font-size: clamp(1.12rem, 3.4vw, 1.65rem);
   font-weight: 400;
   line-height: 1.9;
+}
+
+.invite-welcome {
+  margin-top: 0.35em;
+  font-size: clamp(1.2rem, 3.6vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.8;
 }
 
 .invite-name {
@@ -522,7 +529,7 @@ body {
   }
 
   .invite-copy {
-    padding: 36px 12% 24px;
+    padding: 22px 12% 24px;
     gap: 1.4em;
   }
 
@@ -533,6 +540,10 @@ body {
   .invite-verse {
     font-size: clamp(1rem, 3.2vh, 1.4rem);
     line-height: 1.65;
+  }
+
+  .invite-welcome {
+    font-size: clamp(1.05rem, 3.2vh, 1.45rem);
   }
 
   .invite-name {
